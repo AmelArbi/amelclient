@@ -35,12 +35,13 @@ public class GameControllerTest {
 
     @Test
     public void addPlayerTest() {
+        URI gameUrl =  URI.create("http://localhost:8080/api/game/1");
         URI startGameResourceUrl = URI.create("http://localhost:8080/api/game/1/player");
         URI location = URI.create("http://localhost:8080/api/game/1/player/1");
         when(restTemplate.postForLocation(startGameResourceUrl,Void.class))
                 .thenReturn(location);
 
-        assertThat(gameController.addPlayer(startGameResourceUrl), is(location));
+        assertThat(gameController.addPlayer(gameUrl), is(location));
     }
 
 }
