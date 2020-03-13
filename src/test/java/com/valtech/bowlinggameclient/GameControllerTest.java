@@ -27,6 +27,7 @@ public class GameControllerTest {
     public void startGameTest() {
         URI startGameResourceUrl = URI.create("http://localhost:8080/api/game");
         URI location = URI.create("http://localhost:8080/api/game/1");
+
         when(restTemplate.postForLocation(startGameResourceUrl,Void.class))
         .thenReturn(location);
 
@@ -38,6 +39,7 @@ public class GameControllerTest {
         URI gameUrl =  URI.create("http://localhost:8080/api/game/1");
         URI startGameResourceUrl = URI.create("http://localhost:8080/api/game/1/player");
         URI location = URI.create("http://localhost:8080/api/game/1/player/1");
+
         when(restTemplate.postForLocation(startGameResourceUrl,Void.class))
                 .thenReturn(location);
 
