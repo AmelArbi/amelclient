@@ -1,4 +1,4 @@
-package com.valtech.amelclient.dto;
+package com.valtech.bowlinggameclient.dto;
 
 public class PlayerNameDto {
 

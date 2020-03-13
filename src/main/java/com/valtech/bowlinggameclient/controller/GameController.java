@@ -1,7 +1,6 @@
-package com.valtech.amelclient.controller;
+package com.valtech.bowlinggameclient.controller;
 
 import java.net.URI;
-import java.util.Scanner;
 import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;

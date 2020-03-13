@@ -1,12 +1,11 @@
-package com.valtech.amelclient.controller;
+package com.valtech.bowlinggameclient.controller;
 
 import java.net.URI;
 import java.util.List;
-import javax.annotation.PostConstruct;
-import com.valtech.amelclient.dto.FrameDto;
-import com.valtech.amelclient.dto.GameDto;
-import com.valtech.amelclient.dto.PlayerNameDto;
-import com.valtech.amelclient.dto.WurfDto;
+import com.valtech.bowlinggameclient.dto.FrameDto;
+import com.valtech.bowlinggameclient.dto.GameDto;
+import com.valtech.bowlinggameclient.dto.PlayerNameDto;
+import com.valtech.bowlinggameclient.dto.WurfDto;
 import org.springframework.http.HttpEntity;
 import org.springframework.web.client.RestTemplate;
 import lombok.extern.slf4j.Slf4j;

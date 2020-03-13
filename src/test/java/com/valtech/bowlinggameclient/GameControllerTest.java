@@ -1,7 +1,7 @@
-package com.valtech.amelclient;
+package com.valtech.bowlinggameclient;
 
 import java.net.URI;
-import com.valtech.amelclient.controller.GameController;
+import com.valtech.bowlinggameclient.controller.GameController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

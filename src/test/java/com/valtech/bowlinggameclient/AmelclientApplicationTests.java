@@ -1,4 +1,4 @@
-package com.valtech.amelclient;
+package com.valtech.bowlinggameclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
