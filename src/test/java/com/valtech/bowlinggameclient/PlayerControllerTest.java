@@ -10,6 +10,7 @@ import com.valtech.bowlinggameclient.dto.PlayerNameDto;
 import com.valtech.bowlinggameclient.dto.WurfDto;
 import org.hamcrest.CoreMatchers;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
@@ -26,6 +27,7 @@ import org.springframework.web.client.RestTemplate;
 import static org.hamcrest.Matchers.any;
 import static org.hamcrest.Matchers.hasProperty;
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.isNotNull;
@@ -35,6 +37,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import net.bytebuddy.agent.VirtualMachine;
 
 @RunWith(SpringRunner.class)
 @RestClientTest(PlayerController.class)
@@ -50,13 +53,17 @@ public class PlayerControllerTest {
     private PlayerController playerController;
 
 //    @Before
-//    public void intiUrl() {
+//    public void init() {
 //        playerController = Mockito.mock(PlayerController.class);
 //    }
 
+
     @Test
     public void playerName() {
+
+        //verify(restTemplate).put(playerUrl, new HttpEntity<>(new PlayerNameDto("Alex")));
         verify(playerController).playerName("Alex");
+
     }
 
     @Test
