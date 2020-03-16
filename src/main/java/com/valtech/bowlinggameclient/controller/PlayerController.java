@@ -7,6 +7,7 @@ import com.valtech.bowlinggameclient.dto.GameDto;
 import com.valtech.bowlinggameclient.dto.PlayerNameDto;
 import com.valtech.bowlinggameclient.dto.WurfDto;
 import org.springframework.http.HttpEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import lombok.extern.slf4j.Slf4j;
 
@@ -22,9 +23,8 @@ public class PlayerController {
     }
 
     public void playerName(String name) {
-        URI playerNameResourceUrl = URI.create(playerURL.toString());
-        log.info("playerURL, {}", playerNameResourceUrl);
-        restTemplate.put(playerNameResourceUrl, new HttpEntity<>(new PlayerNameDto(name)));
+        log.info("playerURL, {}", playerURL);
+        restTemplate.put(playerURL, new HttpEntity<>(new PlayerNameDto(name)));
     }
 
     public void addThrow(int zahl) {

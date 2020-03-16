@@ -36,7 +36,7 @@ public class GameController {
     @PostConstruct
     public void startBowlingGameClient() {
         URI gameURL = startGame();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 10; i++) {
             URI firstPlayerUrl = addPlayer(gameURL);
             new PlayerController(restTemplate, firstPlayerUrl).playGame("Player " + i);
         }
