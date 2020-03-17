@@ -15,7 +15,6 @@ import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-//@RestClientTest(GameController.class)
 public class GameControllerTest {
 
     @Mock
