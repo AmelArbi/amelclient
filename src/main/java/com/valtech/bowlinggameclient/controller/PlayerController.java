@@ -6,8 +6,6 @@ import com.valtech.bowlinggameclient.dto.FrameDto;
 import com.valtech.bowlinggameclient.dto.GameDto;
 import com.valtech.bowlinggameclient.dto.PlayerNameDto;
 import com.valtech.bowlinggameclient.dto.WurfDto;
-import org.springframework.http.HttpEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import lombok.extern.slf4j.Slf4j;
 

@@ -2,11 +2,11 @@ package com.valtech.bowlinggameclient.controller;
 
 import java.net.URI;
 import javax.annotation.PostConstruct;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.client.RestTemplate;
 import lombok.extern.slf4j.Slf4j;
 
-@Component
+@Controller
 @Slf4j
 public class GameController {
 
