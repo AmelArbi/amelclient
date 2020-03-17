@@ -24,7 +24,7 @@ public class PlayerController {
 
     public void playerName(String name) {
         log.info("playerURL, {}", playerURL);
-        restTemplate.put(playerURL, new HttpEntity<>(new PlayerNameDto(name)));
+        restTemplate.put(playerURL, new PlayerNameDto(name));
     }
 
     public void addThrow(int zahl) {

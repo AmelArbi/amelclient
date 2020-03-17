@@ -27,6 +27,8 @@ public class GameDto {
 
 
 
+
+
     public List<FrameDto> getFrames() {
         return this.frames;
     }

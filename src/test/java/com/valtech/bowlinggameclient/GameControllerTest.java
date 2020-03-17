@@ -31,7 +31,8 @@ public class GameControllerTest {
         when(restTemplate.postForLocation(startGameResourceUrl,Void.class))
         .thenReturn(location);
 
-        assertThat(gameController.startGame(), is(location));
+        URI actual = gameController.startGame();
+        assertThat(actual, is(location));
     }
 
     @Test
